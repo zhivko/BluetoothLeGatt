@@ -145,7 +145,7 @@ public class DeviceControlActivity extends Activity {
                     }
                     return false;
                 }
-    };
+            };
 
     private void clearUI() {
         //mGattServicesList.setAdapter((SimpleExpandableListAdapter) null);
@@ -168,7 +168,7 @@ public class DeviceControlActivity extends Activity {
         mGattServicesList.setOnChildClickListener(servicesListClickListner);
     mConnectionState = (TextView) findViewById(R.id.connection_state);
     */
-        mDataField = (TextView) findViewById(R.id.data_value);
+        mDataField = findViewById(R.id.data_value);
 
         getActionBar().setTitle(mDeviceName);
         getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -214,7 +214,7 @@ public class DeviceControlActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+        switch (item.getItemId()) {
             case R.id.menu_connect:
                 mBluetoothLeService.connect(mDeviceAddress);
                 return true;
@@ -290,12 +290,12 @@ public class DeviceControlActivity extends Activity {
                 this,
                 gattServiceData,
                 android.R.layout.simple_expandable_list_item_2,
-                new String[] {LIST_NAME, LIST_UUID},
-                new int[] { android.R.id.text1, android.R.id.text2 },
+                new String[]{LIST_NAME, LIST_UUID},
+                new int[]{android.R.id.text1, android.R.id.text2},
                 gattCharacteristicData,
                 android.R.layout.simple_expandable_list_item_2,
-                new String[] {LIST_NAME, LIST_UUID},
-                new int[] { android.R.id.text1, android.R.id.text2 }
+                new String[]{LIST_NAME, LIST_UUID},
+                new int[]{android.R.id.text1, android.R.id.text2}
         );
         mGattServicesList.setAdapter(gattServiceAdapter);
     }
@@ -309,14 +309,16 @@ public class DeviceControlActivity extends Activity {
         return intentFilter;
     }
 
-    public void onClickWrite(View v){
-        if(mBluetoothLeService != null) {
-            mBluetoothLeService.writeCustomCharacteristic(0xAA);
+    public void onClickWrite(View v) {
+
+        Log.d("CLICK ROW", String.valueOf(v.getTag()));
+        if (mBluetoothLeService != null) {
+            mBluetoothLeService.writeCustomCharacteristic(String.valueOf(v.getTag()));
         }
     }
 
-    public void onClickRead(View v){
-        if(mBluetoothLeService != null) {
+    public void onClickRead(View v) {
+        if (mBluetoothLeService != null) {
             mBluetoothLeService.readCustomCharacteristic();
         }
     }

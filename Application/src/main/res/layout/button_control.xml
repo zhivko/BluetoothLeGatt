@@ -1,25 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Write Char"
-        android:id="@+id/button2"
-        android:onClick="onClickWrite" />
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
-    <Button
+        <!-- Include other widget or layout tags here. These are considered
+                "child views" or "children" of the linear layout -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/LeviGor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClickWrite"
+                android:tag="leftup"
+                android:text="Left UP" />
+
+            <Button
+                android:id="@+id/LeviDol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClickWrite"
+                android:tag="leftdown"
+                android:text="Left DOWN" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/DesniGor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClickWrite"
+                android:tag="rightup"
+                android:text="Right UP" />
+
+            <Button
+                android:id="@+id/DesniDol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClickWrite"
+                android:tag="rightdown"
+                android:text="Right DOWN" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Read Char"
-        android:id="@+id/button"
-        android:onClick="onClickRead" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/no_data"
-        android:id="@+id/data_value" />
+        <Button
+            android:id="@+id/BothUP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClickWrite"
+            android:tag="bothup"
+            android:text="Both UP" />
+
+        <Button
+            android:id="@+id/BothDOWN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClickWrite"
+            android:tag="bothdown"
+            android:text="Both DOWN" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickRead"
+            android:text="Read" />
+
+        <TextView
+            android:id="@+id/data_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no_data" />
+    </LinearLayout>
+
 </LinearLayout>

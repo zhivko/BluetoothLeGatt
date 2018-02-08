@@ -1,10 +1,26 @@
 {
     "logs": [
         {
-            "outputFile": "/home/klemen/git/BluetoothLeGatt/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\klemen\\git\\BluetoothLeGatt\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/home/klemen/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/2e5959345baf612381fa3273fb7140b7/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\klemen\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-27.0.2.aar\\a721dd4ddf71b125bcc4d6a2ead256fc\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\home\\klemen\\git\\BluetoothLeGatt\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "map": [
+                {
+                    "source": "C:\\home\\klemen\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-27.0.2.aar\\2e5959345baf612381fa3273fb7140b7\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -335,7 +335,7 @@ public class BluetoothLeService extends Service {
         }
     }
 
-    public void writeCustomCharacteristic(int value) {
+    public void writeCustomCharacteristic(String value) {
 
     /*
         #define SERVICE_UUID        "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
@@ -355,7 +355,7 @@ public class BluetoothLeService extends Service {
         /*get the read characteristic from the service*/
         BluetoothGattCharacteristic mWriteCharacteristic = mCustomService.getCharacteristic(UUID.fromString("beb5483e-36e1-4688-b7f5-ea07361b26a8"));
         //mWriteCharacteristic.setValue(value,android.bluetooth.BluetoothGattCharacteristic.FORMAT_UINT8,0);
-        mWriteCharacteristic.setValue("HaHa!! MyVal.");
+        mWriteCharacteristic.setValue(value);
         if(mBluetoothGatt.writeCharacteristic(mWriteCharacteristic) == false){
             Log.w(TAG, "Failed to write characteristic");
         }
