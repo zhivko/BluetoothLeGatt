@@ -168,10 +168,10 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\klemen\\git\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\values-km_values-km.arsc.flat",
+            "outputFile": "C:\\home\\klemen\\git\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\values-pt-rPT_values-pt-rPT.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\klemen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\d1a24515d6a759057b1f5ea33d97c26a\\res\\values-km\\values-km.xml",
+                    "source": "C:\\home\\klemen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\2f8589c2a303e0288e0106ea0556ff73\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -183,10 +183,10 @@
             ]
         },
         {
-            "outputFile": "C:\\home\\klemen\\git\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\values-pt-rPT_values-pt-rPT.arsc.flat",
+            "outputFile": "C:\\Users\\klemen\\git\\BluetoothLeGatt\\Application\\build\\intermediates\\res\\merged\\debug\\values-km_values-km.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\home\\klemen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\2f8589c2a303e0288e0106ea0556ff73\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "source": "C:\\Users\\klemen\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\d1a24515d6a759057b1f5ea33d97c26a\\res\\values-km\\values-km.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

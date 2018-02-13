@@ -27,6 +27,7 @@
                 android:layout_height="match_parent"
                 android:onClick="onClickWrite"
                 android:tag="leftup"
+                android:drawableLeft="@drawable/if_Arrow_up"
                 android:text="Left UP" />
 
             <Button
@@ -35,6 +36,7 @@
                 android:layout_height="match_parent"
                 android:onClick="onClickWrite"
                 android:tag="leftdown"
+                android:drawableLeft="@drawable/if_Arrow_down"
                 android:text="Left DOWN" />
 
 
@@ -51,6 +53,7 @@
                 android:layout_height="match_parent"
                 android:onClick="onClickWrite"
                 android:tag="rightup"
+                android:drawableLeft="@drawable/if_Arrow_up"
                 android:text="Right UP" />
 
             <Button
@@ -59,6 +62,7 @@
                 android:layout_height="match_parent"
                 android:onClick="onClickWrite"
                 android:tag="rightdown"
+                android:drawableLeft="@drawable/if_Arrow_down"
                 android:text="Right DOWN" />
 
 
@@ -81,6 +85,7 @@
             android:layout_height="match_parent"
             android:onClick="onClickWrite"
             android:tag="bothup"
+            android:drawableLeft="@drawable/if_Arrow_up"
             android:text="Both UP" />
 
         <Button
@@ -89,6 +94,7 @@
             android:layout_height="match_parent"
             android:onClick="onClickWrite"
             android:tag="bothdown"
+            android:drawableLeft="@drawable/if_Arrow_down"
             android:text="Both DOWN" />
 
     </LinearLayout>
